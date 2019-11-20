@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Leonardo Freitas & Murilo">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Ecommerce</title>
+</head>
+
+<body>
+
+    <!-- Barra de acessibilidade -->
+    <div class="backgorund-black">
+        <div id="acessibilidade" class="container">
+            <ul id="atalhos">
+                <li><a href="#iniciodoconteudo">Ir
+                        para o conteúdo [1]</a></li>
+                <li><a href="#iniciodomenu">Ir para o menu [2]</a></li>
+                <li><a href="#busca">Ir para a busca [3]</a></li>
+                <li><a href="#iniciodorodape">Ir para o rodapé [4]</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Fim barra de acessibilidade -->
+
+    <!-- header -->
+    <header class="menu">
+
+        <div class="container">
+
+            <div class="container-menu">
+
+                <div class="container-logo">
+                    <h1>Logomarca</h1>
+                </div>
+
+                <div id="busca" class="container-busca">
+                    <label for="searchBar" hidden>Campo de busca: </label><input type="search" id="searchBar"
+                        placeholder="buscar ..."><input type="button" value="Buscar" id="searchBar">
+
+                </div>
+
+                <nav id="iniciodomenu" class="container-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="categorias.html">Categorias</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+    </header>
+    <!-- fim header -->
+
+    <main>
+
+        <!-- banner -->
+        <section class="main-bg">
+            <div class="container">
+                <div class="container-bg-content">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i> DEV WEEK</h2>
+                    <p>Desenvolvedor, não perca as ofertas especiais na compra de notebooks e tablets. Bora dar um boost
+                        na sua API.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- fim banner -->
+
+        <!-- cadastro -->
+        <section class="cadastro">
+            <div class="container">
+                <div class="title">
+                    <div></div>
+                    <h2><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar novo produto</h2>
+                </div>
+
+
+                <form action="">
+
+                    <fieldset>
+                        <legend>Informações do produto:</legend>
+
+                        <!-- nome do produto -->
+                        <div class="w50" style="padding-right: 30px;">
+                            <label for="inputName">Nome: </label>
+                            <input type="text" id="inputName" name="inputName" maxlength="100"
+                                placeholder="Digite seu nome...">
+                        </div>
+
+                        <!-- Valor de venda -->
+                        <div class="w50">
+                            <label for="valorVenda">Valor de venda: </label>
+                            <input type="number" id="valorVenda" name="valorVenda" min="0">
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- descrição - 500 carc -->
+                        <div class="w50" style="padding-right: 30px;">
+                            <label for="inputDescricao">Descrição: </label>
+                            <textarea class="text-area" name="inputDescricao" id="inputDescricao" cols="30" rows="6"
+                                placeholder="Descrição do produto"></textarea>
+                        </div>
+
+                        <!-- lista de especificações do produto (max 800 caract) -->
+                        <div class="w50">
+                            <label for="inputDescricao">Especificações: </label>
+                            <textarea class="text-area" name="inputDescricao" id="inputDescricao" cols="30" rows="6"
+                                placeholder="Especificações do produto"></textarea>
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- input img -->
+                        <div class="w50">
+                            <label for="inputImg">Inserir imagens:</label>
+                            <input type="file" file id="inputImg" name="img[]" multiple>
+                        </div>
+
+                        <!-- Quantidade em estoque -->
+                        <div class="w50">
+                            <label for="inputEstoque">Quantidade em estoque: </label>
+                            <input type="number" id="inputEstoque" name="inputEstoque" min="0">
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- Categorias -->
+                        <div class="w100">
+
+                            <label for="inputCat">
+                                <p>Escolha a(s) categoria(s):</p>
+                                <!-- cat - 01 -->
+                                <div class="cat">
+                                    <input type="radio" name="cat01" id="cat01">
+                                    <label for="cat01">Categoria 01</label>
+                                </div>
+                                <div class="cat">
+                                    <!-- cat - 02 -->
+                                    <input type="radio" name="cat02" id="cat02">
+                                    <label for="cat02">Categoria 02</label>
+
+                                </div>
+                                <div class="cat">
+                                    <!-- cat - 03 -->
+                                    <input type="radio" name="cat03" id="cat03">
+                                    <label for="cat03">Categoria 03</label>
+
+                                </div>
+                            </label>
+
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- Botão para cadastrar -->
+                        <div class="botao w100">
+                            <label for="cadastrar"></label>
+                            <input type="submit" id="cadastrar" value="Enviar">
+
+                            <label for="cancelar"></label>
+                            <input type="submit" id="cancelar" value="Cancelar">
+                        </div>
+
+
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </section>
+        <!-- fim do cadastro -->
+
+    </main>
+
+    <!-- FOOTER 1 -->
+    <footer class="footer-1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde estamos?</h2>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> R Alguma Coisa 1454, Coqueiros, São Paulo/SP
+                </p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (11)96344-5898</p>
+            </div>
+
+            <div class="w33">
+                <h2>Links Úteis</h2>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+
+            <div class="w33">
+                <h2>Conecte-se conosco</h2>
+                <div class="group-icons">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER 1 -->
+
+    <!-- FOOTER-2 -->
+    <footer class="footer2">
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <!-- FIM FOOTER-2 -->
+
+
+
+</body>
+
+</html>

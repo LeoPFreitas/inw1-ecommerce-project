@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Leonardo Freitas & Murilo">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Ecommerce</title>
+</head>
+
+<body>
+
+    <!-- Barra de acessibilidade -->
+    <div class="backgorund-black">
+        <div id="acessibilidade" class="container">
+            <ul id="atalhos">
+                <li><a href="#iniciodoconteudo">Ir
+                        para o conteúdo [1]</a></li>
+                <li><a href="#iniciodomenu">Ir para o menu [2]</a></li>
+                <li><a href="#busca">Ir para a busca [3]</a></li>
+                <li><a href="#iniciodorodape">Ir para o rodapé [4]</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- Fim barra de acessibilidade -->
+
+    <!-- header -->
+    <header class="menu">
+
+        <div class="container">
+
+            <div class="container-menu">
+
+                <div class="container-logo">
+                    <h1>Logomarca</h1>
+                </div>
+
+                <div id="busca" class="container-busca">
+                    <label for="searchBar" hidden>Campo de busca: </label><input type="search" id="searchBar"
+                        placeholder="buscar ..."><input type="button" value="Buscar" id="searchBar">
+
+                </div>
+
+                <nav id="iniciodomenu" class="container-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="#">Categorias</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+    </header>
+    <!-- fim header -->
+
+    <main>
+
+        <!-- banner -->
+        <section class="main-bg">
+            <div class="container">
+                <div class="container-bg-content">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i> DEV WEEK</h2>
+                    <p>Desenvolvedor, não perca as ofertas especiais na compra de notebooks e tablets. Bora dar um boost
+                        na sua API.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- fim banner -->
+
+        <!-- chamada categorias -->
+        <section class="chamada-cat">
+            <div class="container">
+
+                <div class="title">
+                    <h2>Busque por categorias</h2>
+                </div>
+
+                <div class="cat-container">
+
+                    <div class="cat-single" style="background-color: #ccc;">
+                        <a href="#">Notebooks</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="cat-single">
+                        <a href="#">Tablets</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="cat-single">
+                        <a href="#">Celulares</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fim chamada categorias -->
+
+        <!-- categoria notebook -->
+        <section class="produto" style="background-color: white !important;">
+
+            <div class="container">
+                <div class="title">
+                    <div></div>
+                    <h2><i class="fa fa-laptop" aria-hidden="true"></i> Notebooks</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container-flex">
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/del-xps.png"
+                                    style="background-color: white;" alt="Imagem do notebook delxps."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Del XPS</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 12000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +338 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mack-air.jpg"
+                                    alt="Imagem do notebook mackbook air."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Air</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 9000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +312 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mackpro.jpg"
+                                    alt="Imagem do notebook mackbook pro."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Pro</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 18000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +1238 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clea"></div>
+
+            <div class="container">
+                <div class="container-flex">
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/del-xps.png"
+                                    style="background-color: white;" alt="Imagem do notebook delxps."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Del XPS</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 12000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +338 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mack-air.jpg"
+                                    alt="Imagem do notebook mackbook air."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Air</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 9000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +312 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mackpro.jpg"
+                                    alt="Imagem do notebook mackbook pro."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Pro</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 18000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +1238 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clea"></div>
+
+            <div class="container">
+                <div class="container-flex">
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/del-xps.png"
+                                    style="background-color: white;" alt="Imagem do notebook delxps."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Del XPS</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 12000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +338 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mack-air.jpg"
+                                    alt="Imagem do notebook mackbook air."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Air</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 9000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                        <p>Dourado</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star-half" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +312 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto-wrap">
+                        <div class="produto-single">
+
+                            <a href="detalhes/detalhe1.html"><img src="images/mackpro.jpg"
+                                    alt="Imagem do notebook mackbook pro."></a>
+
+                            <div class="container-infos">
+                                <div class="product-name">
+                                    <a href="#">Mackbook Pro</a>
+                                    <div class="product-stock">
+                                        <p>Em estoque</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-price">
+                                    <i class="fa fa-usd fa-lg" aria-hidden="true"> 18000.00 reais</i>
+                                </div>
+
+                                <div class="product-color">
+                                    <div class="color">
+                                        <p>Cores</p>
+                                    </div>
+                                    <div class="container-ops">
+                                        <p>Preto</p>
+                                        <p>Cinza</p>
+                                        <p>Branco</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-description">
+                                    <h3>Descrição</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                                </div>
+
+                                <div class="product-aval">
+                                    <p>Avaliação</p>
+                                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                        class="fa fa-star" aria-hidden="true"></i></i><i class="fa fa-star"
+                                        aria-hidden="true"></i>
+                                </div>
+
+                                <div class="quant-aval">
+                                    <i class="fa fa-commenting fa-lg" aria-hidden="true"> +1238 avaliações
+                                        realizadas!</i>
+                                </div>
+
+                                <div class="comprar">
+                                    <a href="#">
+                                        <p>comprar</p>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clea"></div>
+        </section>
+        <!-- fim categoria notebook -->
+
+    </main>
+
+    <!-- FOOTER 1 -->
+    <footer class="footer-1">
+        <div class="container">
+            <div class="w33">
+                <h2>Aonde estamos?</h2>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> R Alguma Coisa 1454, Coqueiros, São Paulo/SP
+                </p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (11)96344-5898</p>
+            </div>
+
+            <div class="w33">
+                <h2>Links Úteis</h2>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+
+            <div class="w33">
+                <h2>Conecte-se conosco</h2>
+                <div class="group-icons">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER 1 -->
+
+    <!-- FOOTER-2 -->
+    <footer class="footer2">
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <!-- FIM FOOTER-2 -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+section h2{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+section h4{
+    display: inline-block;
+}
+
+section p{
+    display: inline-block;
+    /* margin-left: 8px; */
+}
+
+.info-linha{
+    padding: 10px;
+}
+
+section.categoria .images-container{
+    display: inline-block;
+    padding: 8px;
+}
+
+section.categoria .images-container h4{
+    display: block;
+    padding: 8px 0;
+}
+
+form{
+    margin: 0 auto;
+    padding: 20px 20px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+form fieldset{
+    border: 0;
+    width: 100%;
+}
+
+form legend{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+

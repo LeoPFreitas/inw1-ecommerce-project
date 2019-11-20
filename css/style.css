@@ -1,0 +1,664 @@
+/* CLASSES GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2%;
+    height: 100%;
+}
+
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: right;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 15px 0;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.w100{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.center{text-align: center;}
+/* FIM CLASSES GERAIS */
+
+/* ********************************************** */
+
+/* ACESSIBILIDADE */
+.backgorund-black{
+    background: #323232;
+}
+
+#acessibilidade ul {
+    list-style: none;
+}
+
+#acessibilidade ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#acessibilidade ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+}
+/* FIM ACESSIBILIDADE */
+
+/* ********************************************** */
+
+/* MENU DESKTOP */
+header.menu{
+    background: #323232;
+    padding-top: 10px;
+}
+
+header.menu .container-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.menu .container-logo h1{
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+}
+
+header.menu .container-busca input[type=search]{
+    width: 250px;
+    border: none;
+    padding: 4px 10px;
+    background-color: #504f4f;
+    color: white;
+    border: 1px solid black;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+}
+
+header.menu .container-busca input[type=button]{
+    background: #323232;
+    color: white;
+    border: none;
+    padding: 4px;
+    border: 1px solid black;   
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+}
+
+header.menu .container-nav ul{
+    list-style: none;
+}
+
+header.menu .container-nav li{
+    display: inline-block;
+}
+
+header.menu .container-nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+/* FIM MENU DESKTO */
+
+/* ********************************************** */
+
+/*  BANNER */
+section.main-bg {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.main-bg .container-bg-content{
+    position: relative;
+    left: 60%;
+    top: 10%;
+    max-width: 40%;
+}
+
+section.main-bg h2{
+    color: rgb(226, 218, 218);
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+section.main-bg p{
+    color: rgb(226, 218, 218);
+    font-size: 20px;
+    margin-top: 8px;
+}
+/* FIM BANNER */
+
+/* ********************************************** */
+
+/* CHAMADA CATEGORIA */
+section.chamada-cat {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+section.chamada-cat .title{
+    text-align: center;
+    margin-bottom: 15px;
+}  
+
+section.chamada-cat .title h2{
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+section.chamada-cat .cat-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+section.chamada-cat .cat-single{
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+section.chamada-cat a{
+    display: inline-block;
+    width: 100%;
+    font-weight: lighter;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+/* FIM CHAMADA CATEGORIA */
+
+/* ********************************************** */
+
+/* PRODUTOS MAIN */
+section.produto{
+    background: #b6b6b6;
+    padding-top: 20px;
+}
+
+section.produto .title{
+    position: relative;
+}
+
+/* section.produto .title > div{
+    width: 90px;
+    height: 3px;
+    background: rgb(20, 55, 92);
+} */
+
+section .title > div{
+    width: 90px;
+    height: 3px;
+    background: rgb(20, 55, 92);
+}
+
+section.produto .title h2{
+    margin-top: 4px;
+    color: black;
+}
+
+section.produto .title i{color: rgb(20, 55, 92);}
+
+section.produto .container-flex{
+    display: flex;
+    flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+section.produto .produto-wrap{
+    width: 30%;
+    margin: 30px 0;
+}
+
+section.produto .produto-single{
+    background: rgb(231, 232, 241);
+    border: 1px solid black;
+    height: 100%;
+}
+
+section.produto .produto-single img{
+    width: 100%;
+    height: 220px;
+}
+
+section.produto .produto-single .container-infos{
+    padding: 0 20px;
+}
+
+section.produto .produto-single .product-name{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+    padding: 8px 0; 
+}
+
+section.produto .product-name a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.produto .product-stock{
+    background: rgb(20, 55, 92);
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+section.produto .product-price{
+    margin: 7px 0;
+}
+
+section.produto .product-color{
+    padding: 8px 0;
+}
+
+section.produto .color > p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.produto .container-ops p{
+    display: inline-block;
+    border: 1px solid black;
+    margin-right: 2px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+section.produto .product-description{
+    padding: 8px 0;
+}
+
+section.produto .product-description h3{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.produto .product-description p{
+    text-align: justify;
+    margin-bottom: 4px;
+}
+
+section.produto .product-aval p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.produto .product-aval i{
+    margin-right: 5px;
+}
+
+section.produto .comprar{
+    width: 80%;
+    margin: 20px auto;
+    background: #292727
+}
+
+section.produto .quant{
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+section.produto .quant p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.produto .comprar a{text-decoration: none;}
+
+section.produto .comprar p{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 4px;
+
+}
+/* FIM PRODUTOS MAIN */
+
+/* ********************************************** */
+
+/* FOOTER-1 */
+footer.footer-1{
+    background: #323232;
+    padding: 20px 0;
+    color: white;
+}
+
+footer.footer-1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+footer.footer-1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+footer.footer-1 a{
+    display: inline-block;
+    color: white;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+/* FIM FOOTER-1 */
+
+/* FOOTER 2 */
+footer.footer2{
+    background: #323232;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+/* FIM FOOTER 2 */
+
+/* ********************************************** */
+
+/* PAGINA CADASTRO */
+
+section.cadastro{
+    margin-top: 30px;
+}
+
+form{
+    padding: 20px 0;
+}
+
+form fieldset{
+    border: 0;
+    width: 100%;
+}
+
+form legend{
+    block-size: 30px;
+    font-weight: bold;
+}
+
+form label{
+    display: block;
+}
+
+form .w50 input, form .w50 textarea{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+form textarea{
+    width: 100%;
+}
+
+form .w100 input, form .w100 label{
+    display: inline-block;
+}
+
+form .w100 .cat{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 4px 0;
+}
+
+form .botao{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form .botao input{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-right: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+/* FIM PAGINA CADASTRO */
+
+/* ********************************************** */
+
+/* CARRINHO */
+
+section.carrinho h2{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+section.carrinho .container-flex{
+    display: flex;
+    flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+section.carrinho .container-flex{
+    display: flex;
+    flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+section.carrinho .produto-wrap{
+    width: 30%;
+    margin: 30px 0;
+}
+
+section.carrinho .produto-single{
+    background: rgb(231, 232, 241);
+    border: 1px solid black;
+    height: 100%;
+}
+
+section.carrinho .produto-single img{
+    width: 100%;
+    height: 220px;
+}
+
+section.carrinho .produto-single .container-infos{
+    padding: 0 20px;
+}
+
+section.carrinho .produto-single .product-name{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+    padding: 8px 0; 
+}
+
+section.carrinho .product-name a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.carrinho .product-stock{
+    background: rgb(20, 55, 92);
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+section.carrinho .product-price{
+    margin: 7px 0;
+}
+
+section.carrinho .product-price p{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+section.carrinho .product-color{
+    padding: 8px 0;
+}
+
+section.carrinho .color > p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.carrinho .container-ops p{
+    display: inline-block;
+    border: 1px solid black;
+    margin-right: 2px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+section.carrinho .product-description{
+    padding: 8px 0;
+}
+
+section.carrinho .product-description h3{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.carrinho .product-description p{
+    text-align: justify;
+    margin-bottom: 4px;
+}
+
+section.carrinho .product-aval p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+section.carrinho .product-aval i{
+    margin-right: 5px;
+}
+
+section.carrinho .product-quant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.carrinho .product-quant p{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+section.carrinho .product-price-total{
+    margin: 7px 0;
+}
+
+section.carrinho .product-price-total p{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* info de envio */
+
+section.info-envio{
+    margin-bottom: 20px;
+}
+
+section.info-envio .container-envio{
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
+
+section.info-envio h3{
+    font-size: 24px;
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+}
+
+section.info-envio form{
+    padding-left: 10px;
+}
+
+section.info-envio .botao{
+    text-align: center;
+}
+
+section.info-envio .botao input{
+    font-size: 22px;
+    padding: 10px;
+}
+
+section.produto .quant-aval{
+    margin-top: 12px;
+}
+
+/* FIM CARRINHO */
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 450px){
+
+    #acessibilidade ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #acessibilidade ul a{
+        font-size: 10px;
+    }
+}
